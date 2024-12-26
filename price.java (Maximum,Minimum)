@@ -1,0 +1,34 @@
+import java.util.*;
+class price{
+	public static void main(String[] args){
+		int[] arr = new int[7];
+		String[] day = {"Monday","Tuesday","Wednesday","Thurday","Friday","Saturday","Sunday"};
+		Scanner sc = new Scanner(System.in);
+		for(int i=0;i<7;i++)
+		{
+			System.out.print("Enter the "+(i+1)+"th day sales : ");
+			int a = sc.nextInt();
+			arr[i] = a;
+		}
+		int max = arr[0];
+		int min = arr[0];
+		int maxindex = 0;
+		int minindex = 0;
+		for(int i=0;i<7;i++)
+		{
+			if(arr[i]>max)
+			{
+				max = arr[i];
+				maxindex = i;
+			}
+			else if(arr[i]<min)
+			{
+				min = arr[i];
+				minindex = i;
+			}
+		}
+		System.out.println("The maximum sales is at "+day[maxindex]+" and the sales is : "+max);
+		System.out.println("The minimum sales is at "+day[minindex]+" and the sales is : "+min);
+		System.out.println("The weekends sales are : "+(arr[5]+arr[6]));
+	}
+}
