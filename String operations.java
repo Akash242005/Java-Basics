@@ -27,12 +27,29 @@ class Main{
 		System.out.println("The  endwith operation  : "+(str1.endsWith("g ")));
 		System.out.println("The replace operation  : "+(str1.replace("String ","Programming is Java")));
 		System.out.println("The replaceall operation  : "+(str1.replaceAll(" ","@!")));
-		System.out.println("The replace first operation  : "+(str1.replaceFirst("[ ]","\\$")));
+		System.out.println("The replace first operation  : "+(str1.replaceFirst("[N]","\\$")));
 		System.out.println("The lower case operation  : "+(str1.toLowerCase()));
 		System.out.println("The upper case operation  : "+(str1.toUpperCase()));
 		System.out.println("The trim operation  : "+(str1.trim()));
 		System.out.println("The number to string  : "+(String.valueOf(123456789)));
 		char[] array = str1.toCharArray();
 		System.out.println("The character array is  : "+(Arrays.toString(array)));
+		System.out.print("The Number of Vowel letters are : ");
+		int vow = 0;
+		int con = 0;
+		for(char u :str1.toCharArray())
+		{
+			if("AEIOUaeiou".indexOf(u) != -1)
+			{
+				vow++;
+			}
+			else if("AEIOUaeiou".indexOf(u) == -1 && u!=' ')
+			{
+				con++;
+			}
+		}
+		System.out.println(vow);
+		System.out.print("The Number of Consonents is : ");
+		System.out.println(con);
 	}
 }
