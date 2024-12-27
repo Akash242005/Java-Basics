@@ -13,9 +13,9 @@ class Main{
 	int right = m-1;
 	int d = 1;
 	System.out.print("Enter the Elements of "+n+" rows and "+m+" coloumn Matrix : ");
-	for(int i=0;i<m;i++)
+	for(int i=0;i<n;i++)
 	{
-		for(int j=0;j<n;j++)
+		for(int j=0;j<m;j++)
 		{
 			matrix[i][j] = sc.nextInt();
 		}
