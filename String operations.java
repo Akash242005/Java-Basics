@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;   //INCLUDES ALL THE FILES
 class Main{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
@@ -51,5 +51,7 @@ class Main{
 		System.out.println(vow);
 		System.out.print("The Number of Consonents is : ");
 		System.out.println(con);
+		System.out.println("The substring operation is  : "+(str1.substring(7,15)));
+		System.out.println("The substring operation is  : "+(str1.substring(7)));
 	}
 }
