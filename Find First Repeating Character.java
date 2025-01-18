@@ -13,7 +13,7 @@ public class Main {
             {
                 mp.put(str.charAt(i), mp.getOrDefault(str.charAt(i), 0)+1);
             }
-            char val = '.';
+            char val = '.'; 
             for(int i=0;i<str.length();i++)
             {
                 if(mp.get(str.charAt(i)) > 1)
