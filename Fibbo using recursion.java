@@ -6,7 +6,7 @@ class Main{
 		return arr;
 	}
 	int num = arr[index-1] + arr[index-2];
-	arr[index] = num;
+	arr[index] = num; 
 	return fibbo(n,arr,index+1);
 }
 	public static void main(String[] args){
